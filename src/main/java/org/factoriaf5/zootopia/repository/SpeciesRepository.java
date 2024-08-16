@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SpeciesRepository extends JpaRepository<Species, Long> {
+
     List<Species> findByFamily(String family);
 
     List<Species> findByType(String type);
